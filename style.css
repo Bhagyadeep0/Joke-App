@@ -20,6 +20,7 @@ nav ul {
     justify-content: center;
     align-items: center;
     margin-bottom: 2.5em;
+    flex-wrap: wrap;
 }
 nav li{
     list-style: none;
@@ -47,15 +48,16 @@ nav li:hover, nav select:hover{
 #facts{
     text-align: center;
     margin: 10px 20px;
-    padding: 1em 1.2em;
+    z-index: 9999; 
+    background-color: #CF1259;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    cursor: pointer;
 }
 #facts h1{
-    margin-bottom: 1em;
-    cursor: pointer;
-    background-color: #eaeaea;
-    padding: .5em .2em;
     text-align: center;
     border-radius: 1em;
+    color: black;
 }
 #facts p{
     margin-bottom: 1.2em;
@@ -73,9 +75,30 @@ main{
     color: #CF1259;
 }
 .joke-content{
-    margin: 1.5em 0;
+    margin: 1em 0;
     padding: 1.2em 1.5em;
     font-size: 2em;
     word-wrap: break-word;
     word-break: break-all;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li {
+        margin: 0.5em 0;
+    }
+    nav select {
+        width: 100%;
+        margin: 0.5em 0;
+    }
+    #facts {
+        position: static;
+        margin: 0.5em 0;
+    }
+    .joke-content{
+        margin-bottom: 2.5em;
+    }
 }
