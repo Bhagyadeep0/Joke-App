@@ -17,7 +17,7 @@ body{
 
 nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 2.5em;
 }
@@ -28,16 +28,15 @@ nav li{
     background: #DD7596;
     color: #eaeaea;
     padding: 0.5em 1em;
+    margin: 0 1.5em 0;
     border-radius: 1em;
     transition: all 0.3s ease-in-out;
 }
-nav select,button{
+nav select,option{
     border: none;
     outline: none;
-    cursor: pointer;
-    padding: .5em;
-    font-size: 1.5em;
-    background: #DD7596;
+    font-size: 1em;
+    background: none;
     color: #eaeaea;
     border-radius: 1em;
     transition: all 0.3s ease-in-out;
@@ -46,13 +45,18 @@ nav li:hover, nav select:hover{
     background: #CF1259;
 }
 button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: .5em;
+    margin-top: 1.5em;
     background: #4F6272;
     color: #eaeaea;
-    margin: 2em 0 0;
     text-align: center;
     width: 100%;
+    font-size: 1.5em;
     border-radius: 1em;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 button:hover{
     background: #404E5C;
@@ -67,6 +71,10 @@ main{
 }
 .joke-content{
     margin-top: 1.5em;
+    filter: blur(4px);
     word-wrap: break-word;
     word-break: break-all;
+}
+.joke-content:hover{
+    filter: blur(0);
 }
