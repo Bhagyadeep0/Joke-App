@@ -44,24 +44,27 @@ nav select,option{
 nav li:hover, nav select:hover{
     background: #CF1259;
 }
-button{
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: .5em;
-    margin-top: 1.5em;
-    background: #4F6272;
-    color: #eaeaea;
+#facts{
     text-align: center;
-    width: 100%;
-    font-size: 1.5em;
+    margin: 10px 20px;
+    padding: 1em 1.2em;
+}
+#facts h1{
+    margin-bottom: 1em;
+    cursor: pointer;
+    background-color: #eaeaea;
+    padding: .5em .2em;
+    text-align: center;
     border-radius: 1em;
-    transition: all 0.3s ease-in-out;
 }
-button:hover{
-    background: #404E5C;
+#facts p{
+    margin-bottom: 1.2em;
+    font-size: 1.5em;
+    display: none;
 }
-
+#facts h1:focus + p{
+display: block;
+}
 main{
     text-align: center;
 }
@@ -70,11 +73,9 @@ main{
     color: #CF1259;
 }
 .joke-content{
-    margin-top: 1.5em;
-    filter: blur(4px);
+    margin: 1.5em 0;
+    padding: 1.2em 1.5em;
+    font-size: 2em;
     word-wrap: break-word;
     word-break: break-all;
-}
-.joke-content:hover{
-    filter: blur(0);
 }
