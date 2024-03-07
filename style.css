@@ -1,0 +1,72 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #B7C3F3;
+}
+.container{
+    background: rgba(234, 234, 234, 0.25);
+    padding: 1.2em 1.8em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5em;
+}
+nav li{
+    list-style: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    background: #DD7596;
+    color: #eaeaea;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    transition: all 0.3s ease-in-out;
+}
+nav select,button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: .5em;
+    font-size: 1.5em;
+    background: #DD7596;
+    color: #eaeaea;
+    border-radius: 1em;
+    transition: all 0.3s ease-in-out;
+}
+nav li:hover, nav select:hover{
+    background: #CF1259;
+}
+button{
+    background: #4F6272;
+    color: #eaeaea;
+    margin: 2em 0 0;
+    text-align: center;
+    width: 100%;
+    border-radius: 1em;
+    transition: all 0.3s ease;
+}
+button:hover{
+    background: #404E5C;
+}
+
+main{
+    text-align: center;
+}
+.joke-title{
+    margin-top: 1.2em;
+    color: #CF1259;
+}
+.joke-content{
+    margin-top: 1.5em;
+    word-wrap: break-word;
+    word-break: break-all;
+}
